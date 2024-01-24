@@ -91,12 +91,16 @@ progress::-moz-progress-bar {
 .container {
   display: flex;
   flex-direction: column;
+  background-image: url("./Assets/images/padlock_image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   background-color: var(--secondary);
   padding: 40px;
   width: 60%;
   margin: 50px;
   border-radius: 20px;
+  border: 3px solid var(--secondary);
 }
 
 .password-input {
@@ -106,6 +110,7 @@ progress::-moz-progress-bar {
   padding: 10px;
   text-align: center;
   background-color: var(--tertiary);
+  opacity: 0.88;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -128,6 +133,7 @@ progress::-moz-progress-bar {
   background-color: var(--tertiary);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  opacity: 0.88;
 }
 
 .outcome {
