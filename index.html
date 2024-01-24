@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Password Check</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>How Good is Your Password?</h1>
+    <div class="container">
+      <div class="password-input">
+        <label class="password-input__label"
+          >Check the strength of your password</label
+        >
+        <input
+          id="password"
+          class="password-input__password"
+          placeholder="Enter your password"
+          maxlength="25"
+          oninput="checkPasswordStrength()"
+        />
+      </div>
+      <div class="progress-bar">
+        <progress id="checker" value="0" max="100"></progress>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
